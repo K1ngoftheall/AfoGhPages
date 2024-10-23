@@ -3,7 +3,7 @@ import {useState} from "react";
 
 export default function Card({
   // eslint-disable-next-line react/prop-types
-  card: { id, name, price, haveUser,  haveStore, brand, article, discount},
+  card: { name, price, haveUser,  haveStore, brand, article, discount},
 }) {
   const [count, setCount] = useState(Number(haveUser));
   const increaseCounter = () => {
@@ -17,8 +17,8 @@ export default function Card({
     <li className={classes.card}>
       <div className={classes.card__main}>
       <div className={classes.card__header}>
-       <img src="../motor.png" alt="картинка"  className={classes.card__img}/>
-       <img src="../public/heart.png" alt="лайк"  className={classes.card__heart}/>
+        <div className={classes.card__img}></div>
+        <div  className={classes.card__heart}></div>
       </div>
 
       <div className={classes.card__raiting}></div>
@@ -39,7 +39,8 @@ export default function Card({
       <div className={classes.card__caption}>
         <p className={classes.card__captionName}>Цена за шт</p>
         <div className={classes.card__captionCount}>
-          <img src="../public/homeLogo.png" alt="склад" className={classes.card__captionCountLogo}/>
+          <div className={classes.card__captionCountLogo}></div>
+          
           <div className={classes.card__captionCountValue}>
             {haveStore}
             <p className={classes.card__captionCountValueText}>шт</p>
@@ -51,11 +52,15 @@ export default function Card({
         <div className={classes.card__priceContainer}>
         <span className={classes.card__binPriceDiscount}>{price*(discount / 100)}Р</span>
         <div className={classes.card__binPriceCounter}>
-          <button className={classes.card__counterButton}  onClick={deccreaseCounter}><img src="../public/minus.png" alt="" /></button>
+          <button className={classes.card__counterButton}  onClick={deccreaseCounter}>
+            <div className={classes.card__counterButtonMinus}></div>
+            </button>
           <span className={classes.card__binHaveUser}>{count}</span>
-          <button className={classes.card__counterButton} onClick={increaseCounter}><img src="./images/plus.png" alt="" /></button>
+          <button className={classes.card__counterButton} onClick={increaseCounter}>
+            <div className={classes.card__counterButtonPlus}></div>
+            </button>
         </div>
-        <img src="../binLogo.png" alt="" className={classes.card__bin}/>
+        <div className={classes.card__bin}></div>
       </div>
         
       ) : (

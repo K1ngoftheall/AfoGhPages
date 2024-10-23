@@ -29,6 +29,8 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    background-image: url(../public/motor.png);
+    background-repeat: no-repeat;
 }
 
 .card__heart{
@@ -38,6 +40,8 @@
     top: 0;
     right: 0;
     z-index: 10;
+    background-image: url(../public/heart.png);
+    background-repeat: no-repeat;
 }
 
 .card__raiting{
@@ -116,9 +120,12 @@
 }
 
 .card__captionCountLogo{
-    max-width: 18px;
+    width: 18px;
     max-height: 18px;
+    height: 100%;
     box-sizing: border-box;
+    background-image: url(../public/homeLogo.png);
+    background-repeat: no-repeat;
 }
 .card__captionCountValue{
     display: flex;
@@ -189,6 +196,23 @@
     background-color: #fff;
     padding: 0;
 }
+
+
+
+.card__counterButtonMinus{
+    width: 13px;
+    height: 13px;
+    background-image: url(../public/minus.png);
+    background-repeat: no-repeat;
+}
+
+.card__counterButtonPlus{
+    width: 13px;
+    height: 13px;
+    background-image: url(../public/plus.png);
+    background-repeat: no-repeat;
+}
+
 .card__binHaveUser{
     align-self: center;
     margin: 0;
@@ -200,7 +224,11 @@
 
 .card__bin{
     max-width: 38px;
+    width: 100%;
     max-height: 38px;
+    height: 100%;
+    background-image: url(../public/binLogo.png);
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 900px) {
