@@ -1,0 +1,304 @@
+.card{
+    list-style: none;
+    width: 343px;
+    height: 498px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.card__main{
+    max-width: 318px;
+    width: 100%;
+    max-height: calc(498px - 24px);
+    height: 100%;
+    margin: 12px auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.card__header{
+    width: 100%;
+    height: 212px;
+    position: relative;
+
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card__heart{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.card__raiting{
+    height: 18px;
+    margin: 12px 0;
+    background-image: url(../public/ratDesktop.png);
+    background-repeat: no-repeat;
+}
+
+.card__name{
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.card__otherInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__brand{
+    display: flex;
+}
+
+.card__brandName{
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #8E8E8E;
+}
+
+.card__brandValue{
+    margin: 0 0 0 3px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1C1C1C;
+}
+.card__article{
+    display: flex;
+}
+
+.card__articleName{
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #8E8E8E;
+}
+.card__articleValue{
+    margin: 0 0 0 3px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1C1C1C;
+}
+
+.card__caption{
+    margin: 12px 0;
+    border-bottom: 1px solid #D9D9D9;
+    max-height: 24px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.card__captionName{
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8E8E8E;
+}
+.card__captionCount{
+    display: flex;
+}
+
+.card__captionCountLogo{
+    max-width: 18px;
+    max-height: 18px;
+    box-sizing: border-box;
+}
+.card__captionCountValue{
+    display: flex;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 0 2px;
+}
+.card__captionCountValueText{
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 0 2px;
+
+}
+
+.card__priceContainer{
+    max-height: 38px;
+    height: 100%;
+    display: flex;
+}
+
+.card__priceDiscount{
+    height: 100%;
+    color: #E53B35;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.card__Discount{
+    max-height: 20px;
+    background-color: #E53B35;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0 5px;
+    margin: 0 2px;
+}
+
+.card__price{
+    max-height: 20px;
+    color: #8E8E8E;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.card__binPriceDiscount{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+
+}
+.card__binPriceCounter{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    max-width: 93px;
+    width: 100%;
+}
+.card__counterButton{
+    border: none;
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+}
+.card__binHaveUser{
+    align-self: center;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+
+}
+
+.card__bin{
+    max-width: 38px;
+    max-height: 38px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .card{
+        width: 162px;
+        height: 307px;
+        background-color: #ededed;
+    }
+
+    .card__main{
+        margin: 0;
+    }
+
+    .card__header{
+        width: 100%;
+        height: 160px;
+        position: relative;
+    
+    }
+
+    .card__raiting{
+        margin: 10px 0;
+        background-image: url(../ratMobile.png);
+    }
+
+    .card__name{
+        font-size: 10px;
+        line-height: 18px;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .card__otherInfo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .card__brandName{
+        display: none;
+    }
+    
+    .card__brandValue{
+        margin: 0;
+        font-size: 10px;
+        line-height: 18px;
+        font-weight: 600;
+    }
+    
+    .card__articleName{
+        display: none;
+    }
+
+    .card__articleValue{
+        margin: 0;
+        font-size: 10px;
+        line-height: 18px;
+        font-weight: 600;
+        color: #8E8E8E;
+    }
+
+    .card__caption{
+        margin: 5px 0;
+    }
+
+    .card__priceContainer{
+        justify-content: space-around;
+    }
+    
+    .card__priceDiscount{
+        color: #E53B35;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+    
+    .card__Discount{
+       display: none;
+    }
+    
+    .card__price{
+        text-decoration: line-through;
+    }
+    
+    .card__binPriceDiscount{
+        color: #E53B35;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+    
+    }
+    .card__binPriceCounter{
+        display: none;
+    }
+
+    .card__bin{
+        max-width: 24px;
+        max-height: 24px;
+    }
+
+}
