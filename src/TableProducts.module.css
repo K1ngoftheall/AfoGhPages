@@ -22,25 +22,49 @@
     gap: 20px;
 }
 
-@media screen and (max-width: 1465px) {
+@media screen and (max-width: 1530px) {
 
 .TableProducts{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    max-width: 1094px;
+    max-width: 70%;
 }
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1160px) {
 
     .TableProducts{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
-        max-width: 710px;
+        max-width: 80%;
     }
     }
 @media screen and (max-width: 900px) {
     .TableProducts{
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .TableProducts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .TableProducts{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .TableProducts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .TableProducts{
+        grid-template-columns: 1fr;
     }
 }
