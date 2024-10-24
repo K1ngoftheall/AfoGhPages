@@ -64,13 +64,18 @@ export default function Card({
       </div>
         
       ) : (
+          <div className={classes.card__buyContainer}>
         <div className={classes.card__priceContainer}>
           <span className={classes.card__priceDiscount}>{price*(discount / 100)}Р</span>
           <span className={classes.card__Discount}>-{discount}%</span>
           <span className={classes.card__price}>{price}Р</span>
-        </div>  
+          
+        </div> 
+        <div className={classes.card__bin} onClick={increaseCounter}></div>
+        </div> 
       )}
       </div>
     </li>
   );
 }
+

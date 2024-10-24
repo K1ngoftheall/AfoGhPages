@@ -1,5 +1,6 @@
 .card{
     list-style: none;
+    margin: 0 auto;
     width: 343px;
     height: 498px;
     border-radius: 10px;
@@ -144,6 +145,12 @@
 
 }
 
+.card__buyContainer{
+    min-height: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .card__priceContainer{
     max-height: 38px;
     height: 100%;
@@ -152,13 +159,19 @@
 
 .card__priceDiscount{
     height: 100%;
-    color: #E53B35;
+    color: #000;
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
 }
 
+.card:hover .card__priceDiscount{
+    color: #E53B35;
+}
+
+
 .card__Discount{
+    display: none;
     max-height: 20px;
     background-color: #E53B35;
     border-radius: 5px;
@@ -170,12 +183,22 @@
     margin: 0 2px;
 }
 
+.card:hover .card__Discount{
+    display: block;
+}
+
+
 .card__price{
+    display: none;
     max-height: 20px;
     color: #8E8E8E;
     font-size: 10px;
     font-weight: 500;
     line-height: 18px;
+}
+
+.card:hover .card__price{
+    display: block;
 }
 
 .card__binPriceDiscount{
@@ -310,22 +333,20 @@
     }
     
     .card__priceDiscount{
-        color: #E53B35;
+        
         font-size: 14px;
         font-weight: 600;
         line-height: 21px;
     }
     
-    .card__Discount{
-       display: none;
-    }
+
     
     .card__price{
         text-decoration: line-through;
     }
     
     .card__binPriceDiscount{
-        color: #E53B35;
+        
         font-size: 14px;
         font-weight: 600;
         line-height: 21px;
@@ -343,6 +364,13 @@
         box-sizing: border-box
     }
 
+    .card:hover .card__Discount{
+        display: none;
+    }
     
 
+    .card:hover .card__price{
+        display: none;
+    }
+    
 }
